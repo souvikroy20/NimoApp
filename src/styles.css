@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: lightgray;
+}
+
+.text-link {
+    cursor: pointer;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.top-nav {
+    height: 50px;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+.side-nav {
+    width: 75px;
+    height: 100vh;
+    background-color: #333333;
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+.logo-holder {
+    width: 75px;
+    height: 50px;
+    background-color: black;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.nav-link a:visited,
+.nav-link a:active,
+.nav-link a:link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link a:hover {
+    background-color: whitesmoke;
+    color: #333333;
+}
+
+.active {
+    background-color: whitesmoke;
+    color: #333333!important;
+}
+
+.side-nav ul,
+.side-nav ul li {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
