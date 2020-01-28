@@ -4,6 +4,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { RouterModule } from '@angular/router';
+import { Firestore } from '@google-cloud/firestore';
 
 
 
@@ -12,7 +13,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     ModalModule.forRoot(),
-    RouterModule
+    RouterModule,
   ],
   exports:[CommonModule,TopbarComponent,SideNavComponent,RouterModule]
 })

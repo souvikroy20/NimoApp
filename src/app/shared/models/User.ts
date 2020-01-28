@@ -1,7 +1,7 @@
 export class User {
     public id:string;
     public name: string;
-    public profilePic: string;
+    public profileImageUrl: string;
     public email: string;
     public address:string;
     public gender:Gender;
@@ -11,12 +11,10 @@ export class User {
     public accountCreatedOn: Date;
     public accountCreatedBy: string;
     public accountCreatedById: string;
-    public accountModifiedOn: Date;
-    public accountModifiedBy: string;
-    public accountModifiedById: string;
     public accountStatus:AccountStatus;
     public academicDetailsId:string;
-    
+    public userRole:SystemRoles;
+    public workDetailsId:string;
 }
 
 export class AcademicDetails{
@@ -29,14 +27,18 @@ export class AcademicDetails{
     public duesId:string;
 }
 
+export class WorkDetails{
+    public id:string;
+    public userId:string;
+    public designation:string;
+    public type:UserType;
+}
+
 export class Department{
     public id:string;
     public name:string;
-    public parentDepartmentId:string;
+    public parentDepartmentName:string;
     public createdOn:Date;
     public createdBy:string;
-    public createdById:string;
-    public modifiedOn:string;
-    public modifiedBy:string;
-    public modifiedById:string;    
+    public createdById:string;  
 }
