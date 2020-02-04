@@ -4,6 +4,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { TopbarComponent } from './topbar/topbar.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { RouterModule } from '@angular/router';
+import { AgGridModule } from 'ag-grid-angular';
 
 
 
@@ -12,7 +13,10 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     ModalModule.forRoot(),
-    RouterModule
+    RouterModule,
+    AgGridModule.withComponents([])
+
+    
   ],
   exports:[CommonModule,TopbarComponent,SideNavComponent,RouterModule]
 })

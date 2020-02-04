@@ -12,4 +12,16 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
+  columnDefs=[
+    {headerName:'Name',field:'name'},
+    {headerName:'Verified',field:'verified'},
+    {headerName:'Due Amount',field:'dueamount'}
+];
+rowData=[
+    {name:"Narayan",verified:"Button Here",dueamount:"Modal here"},
+    {name:"Rajesh",verified:"Button Here",dueamount:"Modal here"},
+    {name:"Omik",verified:"Button Here",dueamount:"Modal here"}
+];
+
+
 }
