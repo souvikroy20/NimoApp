@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { VerifyRoutingModule } from './verify-routing.module';
 import { VerifyComponent } from './verify.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AgGridModule } from 'ag-grid-angular';
+
 
 
 
@@ -10,7 +12,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   declarations: [VerifyComponent, DashboardComponent],
   imports: [
     CommonModule,
-    VerifyRoutingModule
+    VerifyRoutingModule,
+    AgGridModule.withComponents([])
   ]
 })
 export class VerifyModule { }
